@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:paddingBottom="50dp"-->
+        <!--android:id="@+id/tooooo"-->
+        <!--android:background="#fcc"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp">-->
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ImageView-->
+                <!--android:padding="5dp"-->
+                <!--android:src="@drawable/message"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="40dp" />-->
+        <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <!--<include layout="@layout/header_layout"-->
+        <!--android:id="@+id/hhh"-->
+
+        <!--/>-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/id_rl_cart_is_empty"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#FCFCFC"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="48dp"-->
+        <!--android:visibility="gone">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/id_rl_cart_is_empty_image"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:background="@mipmap/ic_shopping_cart_empty"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/id_rl_cart_is_empty_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_below="@id/id_rl_cart_is_empty_image"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="购物车为空"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--&lt;!&ndash;android:background="@mipmap/channel_expandablelistview_bg"-->
+     <!--android:layout_below="@id/id_inc_top"  有点问题 why?-->
+    <!--&ndash;&gt;-->
+    <!--<ExpandableListView-->
+        <!--android:id="@+id/id_elv_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:cacheColorHint="#00000000"-->
+        <!--android:divider="#ebebeb"-->
+        <!--android:groupIndicator="@null"-->
+        <!--android:dividerHeight="2dp"-->
+        <!--android:footerDividersEnabled="false"-->
+        <!--android:visibility="visible"-->
+        <!--&gt;-->
+    <!--</ExpandableListView>-->
+
+
+    <!--&lt;!&ndash;include进来方式可能会导致view覆盖listview的最后一个item  代码里动态改变listview下面的距离-->
+    <!--android:layout_below="@id/id_elv" 有点问题 why?-->
+    <!--&ndash;&gt;-->
+    <!--<include-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--layout="@layout/foot_layout"-->
+        <!--/>-->
+
+<!--</RelativeLayout>-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <include layout="@layout/header_layout"
+        />
+
+    <RelativeLayout
+        android:id="@+id/id_rl_cart_is_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCFCFC"
+        android:gravity="center"
+        android:layout_marginTop="48dp"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/id_rl_cart_is_empty_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/ic_shopping_cart_empty"/>
+        <TextView
+            android:id="@+id/id_rl_cart_is_empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/id_rl_cart_is_empty_image"
+            android:layout_marginTop="10dp"
+            android:text="购物车为空"/>
+    </RelativeLayout>
+    <ExpandableListView
+        android:id="@+id/id_elv_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#ebebeb"
+        android:groupIndicator="@null"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="false"
+        android:visibility="visible"
+        >
+    </ExpandableListView>
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/foot_layout"
+        />
+
+</RelativeLayout>

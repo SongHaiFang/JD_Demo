@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:background="#fcc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:padding="8dp"
+                android:onClick="saoyisao"
+                android:src="@drawable/erweima"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp" />
+            <SearchView
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:padding="8dp"
+                android:src="@drawable/redbag"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:padding="8dp"
+                android:src="@drawable/message"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/mybanner"
+                android:layout_height="120dp"
+                android:layout_width="match_parent" />
+            <include
+                layout="@layout/index_er"
+                android:layout_height="120dp"
+                android:layout_width="match_parent" />
+            <include
+                layout="@layout/pager_er"
+                android:layout_height="220dp"
+                android:layout_width="match_parent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myRecy"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

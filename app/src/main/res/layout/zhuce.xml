@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="登录页面 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:hint="请输入用户名"
+        android:id="@+id/ed_name"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+    <EditText
+        android:layout_gravity="center"
+        android:hint="请输入密码"
+        android:id="@+id/ed_pwd"
+        android:layout_width="250dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/login"
+        android:text="登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/zhuce"
+        android:text="注册"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
